@@ -5,5 +5,9 @@
   "features": {
     "git": "latest",
     "common": "latest"
-  }
+  },
+  "extensions": [
+    "webfreak.dlang-bundle",
+    "editorconfig.editorconfig"
+  ]
 }

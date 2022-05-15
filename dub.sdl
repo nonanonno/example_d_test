@@ -1,0 +1,4 @@
+name "example_d_test"
+description "A minimal D application."
+authors "nonanonno"
+license "Apache-2.0"
