@@ -24,6 +24,18 @@ int sub(int a, int b)
     return a - b;
 }
 
+/**
+ * Mul two params
+ * Params:
+ *   a = Param a
+ *   b = Param b
+ * Returns: Muled value
+ */
+int mul(int a, int b)
+{
+    return a * b;
+}
+
 @("add")
 unittest
 {
@@ -38,4 +50,12 @@ unittest
     import dshould;
 
     sub(1, 2).should.be(-1);
+}
+
+@("mul")
+unittest
+{
+    import dshould;
+
+    mul(1, 2).should.be(2);
 }
