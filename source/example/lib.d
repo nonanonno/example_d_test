@@ -51,3 +51,11 @@ unittest
 
     sub(1, 2).should.be(-1);
 }
+
+@("mul")
+unittest
+{
+    import dshould;
+
+    mul(1, 2).should.be(2);
+}
