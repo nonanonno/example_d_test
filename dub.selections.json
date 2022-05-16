@@ -1,5 +1,9 @@
 {
 	"fileVersion": 1,
 	"versions": {
+		"dshould": "1.5.0",
+		"prettyprint": "1.0.7",
+		"silly": "1.1.1",
+		"unit-threaded": "1.1.0"
 	}
 }

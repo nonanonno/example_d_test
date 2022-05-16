@@ -1,13 +1,20 @@
 {
   "name": "example_d_test",
-  "image": "nonanonno/ldc:1.28.1",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "DMD": "ldc:1.28.1"
+    }
+  },
   "remoteUser": "vscode",
   "features": {
     "git": "latest",
     "common": "latest"
   },
   "extensions": [
-    "webfreak.dlang-bundle",
+    "webfreak.code-d",
+    "pflannery.vscode-versionlens",
+    "vadimcn.vscode-lldb",
     "editorconfig.editorconfig"
   ]
 }
