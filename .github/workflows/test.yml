@@ -24,8 +24,8 @@ jobs:
           compiler: ${{ matrix.dc }}
       - name: Run build
         run: dub build
-      - name: Run lint
-        run: dub -q lint
       - name: Run tests
         run: dub -q test --coverage
+      - name: Run lint
+        run: dub -q lint
       - uses: codecov/codecov-action@v2
