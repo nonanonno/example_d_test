@@ -21,6 +21,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dlang-community/setup-dlang@v1
         with:
-          compiler: ${{ matric.dc }}
+          compiler: ${{ matrix.dc }}
       - name: Run tests
         run: dub -q test
