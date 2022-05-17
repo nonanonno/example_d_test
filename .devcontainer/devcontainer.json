@@ -3,10 +3,11 @@
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "DMD": "ldc:1.28.1"
+      "DC": "ldc-1.28.1"
     }
   },
   "remoteUser": "vscode",
+  "userEnvProbe": "interactiveShell",
   "features": {
     "git": "latest",
     "common": "latest"
