@@ -6,6 +6,8 @@ on:
       - main
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "0 15 * * *" # 00:00 JST
 
 jobs:
   test:
@@ -16,6 +18,7 @@ jobs:
         dc:
           - dmd-latest
           - ldc-latest
+          - ldc-1.28.1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
