@@ -1,0 +1,23 @@
+name: release
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+
+jobs:
+  deploy-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dlang-community/setup-dlang@v1
+      - name: Generate docs
+        run: dub run harbored-mod -- . -o docs -p example_d_test
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: $${{ secrets.GITHUB_TOKEN }}
+          allow_empty_commit: false
+          publish_dir: docs
+          user_name: Github Actions Bot
+          user_email: <>
