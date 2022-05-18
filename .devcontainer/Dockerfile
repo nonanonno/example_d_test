@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   xz-utils \
   ca-certificates \
   bash-completion \
+  zlib1g-dev \
+  libssl-dev \
   && apt-get clean && rm -rf /var/lib/apt/*
 
 ARG DC
